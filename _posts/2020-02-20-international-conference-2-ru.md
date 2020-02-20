@@ -4,7 +4,7 @@ title: Нацстакомом проведен семинар «Данные и 
 author: Национальный статистический комитет Кыргызской Республики
 excerpt:
 language: ru
-permalink: /international-conference/
+permalink: /international-conference-2/
 categories:
   - custom.international
 ---
