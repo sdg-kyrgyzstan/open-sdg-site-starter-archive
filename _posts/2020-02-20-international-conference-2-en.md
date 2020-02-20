@@ -4,9 +4,9 @@ title: National Statistics Committee held a seminar “Data and metadata for ind
 author: National Statistical Committee of the Kyrgyz Republic
 excerpt:
 language: en
-permalink: /en/international-conference/
+permalink: /en/National_1/
 categories:
-  - custom.international
+  - National_1
 ---
 
 ## National Statistics Committee held a seminar “Data and metadata for indicators of the Sustainable Development Goals»
