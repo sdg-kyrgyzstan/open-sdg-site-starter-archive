@@ -44,7 +44,7 @@ GEM
     jekyll-get-json (0.0.1)
       deep_merge (~> 1.2)
       jekyll (~> 3.0)
-    jekyll-open-sdg-plugins (1.2.0.pre.beta4)
+    jekyll-open-sdg-plugins (1.2.0)
       deep_merge (~> 1.2)
       jekyll (~> 3.0)
       json_schemer (~> 0.2)
@@ -103,7 +103,7 @@ DEPENDENCIES
   html-proofer
   jekyll (= 3.8.5)
   jekyll-get-json (= 0.0.1)
-  jekyll-open-sdg-plugins (= 1.2.0.pre.beta4)
+  jekyll-open-sdg-plugins (= 1.2.0)
   jekyll-remote-theme
 
 BUNDLED WITH
