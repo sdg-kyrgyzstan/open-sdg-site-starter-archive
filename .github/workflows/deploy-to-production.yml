@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Set up Ruby 2.6
       uses: actions/setup-ruby@v1
       with:
@@ -42,7 +42,7 @@ jobs:
         bundle install
         bundle exec jekyll build --config _config.yml,_config_prod.yml
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@releases/v3
+      uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         REPOSITORY_NAME: sustainabledevelopment-kyrgyzstan/sustainabledevelopment-kyrgyzstan.github.io
         ACCESS_TOKEN: ${{ secrets.token }}
