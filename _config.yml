@@ -30,6 +30,10 @@ analytics:
   ga_prod: ''
   
 series_toggle: true
+
+data_fields:
+  units: UNIT_MEASURE
+  series: SERIES
  
 # Social media accounts.
 #twitter: 'MyTwitterAccount'
