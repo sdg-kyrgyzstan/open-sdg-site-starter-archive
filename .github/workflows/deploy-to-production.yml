@@ -42,7 +42,7 @@ jobs:
         bundle install
         bundle exec jekyll build --config _config.yml,_config_prod.yml
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@3.7.1
+      uses: JamesIves/github-pages-deploy-action@4.1.5
       with:
         REPOSITORY_NAME: sustainabledevelopment-kyrgyzstan/sustainabledevelopment-kyrgyzstan.github.io
         ACCESS_TOKEN: ${{ secrets.token }}
