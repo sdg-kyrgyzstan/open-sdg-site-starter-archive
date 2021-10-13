@@ -34,7 +34,10 @@ series_toggle: true
 data_fields:
   units: UNIT_MEASURE
   series: SERIES
+<<<<<<< HEAD
 
+=======
+>>>>>>> a6c208c (set units and series data fields)
  
 # Social media accounts.
 #twitter: 'MyTwitterAccount'
