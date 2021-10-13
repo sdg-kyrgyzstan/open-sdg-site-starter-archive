@@ -1,0 +1,173 @@
+# Jekyll configuration for Open SDG platform
+#
+# You will need to change all of the capitalized variables below according
+# to your Github setup. For example, if your site and data repositories are:
+# -- https://github.com/my-awesome-github-org/my-awesome-site-repo
+# -- https://github.com/my-awesome-github-org/my-awesome-data-repo
+# Then you would want to make these replacements throughout this file:
+# -- replace "my-github-org" with "my-awesome-github-org"
+# -- replace "open-sdg-site-starter" with "my-awesome-site-repo"
+# -- replace "open-sdg-data-starter" with "my-awesome-data-repo"
+
+# Replace this title as needed.
+title: Indicators For The Sustainable Development Goals
+# Replace the baseurl with the name of this repository.
+baseurl: "/open-sdg-site-starter"
+url: ""
+data_dir: data
+environment: staging
+
+# Replace my-github-org and open-sdg-data-starter as needed.
+remote_data_prefix: "https://SDG-kyrgyzstan.github.io/open-sdg-data-starter"
+
+create_indicators:
+  layout: indicator
+create_goals:
+  layout: goal-by-target
+create_pages: true
+
+analytics:
+  ga_prod: ''
+  
+series_toggle: true
+
+data_fields:
+  units: UNIT_MEASURE
+  series: SERIES
+ 
+# Social media accounts.
+#twitter: 'MyTwitterAccount'
+
+# Replace the email addresses below.
+email_contacts:
+  questions: sdg_nsc@stat.kg
+  suggestions: sdg_nsc@stat.kg
+  functional: sdg_nsc@stat.kg
+
+# Github Repo for Data
+# Replace this value as needed.
+repo_name: open-sdg-data-starter
+branch: develop
+# Replace this value as needed.
+org_name: sustainabledevelopment-kyrgyzstan
+
+# Build settings
+markdown: kramdown
+
+# Travis Support
+exclude: [vendor, scripts, remotedata]
+
+# International Support
+# Eg name: Australia and adjective: Australian
+country:
+  name: Kyrgyzstan
+  adjective: Kyrgyz
+  
+  
+# Optionally uncomment and update the settings below to control the frontpage heading and instructions.
+frontpage_heading: custom.frontpage_heading
+frontpage_instructions: custom.frontpage_instructions
+
+# Pages
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+  posts:
+    output: true
+    permalink: /news/:year/:month/:day/:title.html
+  indicators:
+    output: true
+  goals:
+    output: true
+  publications:
+    output: true
+    permalink: /publications/title.html
+# Menu
+menu:
+  # Use these to customise the main navigation.
+  - path: /reporting-status
+    # The "translation_key" refers to the key in the SDG Translations repository.
+    translation_key: menu.reporting_status
+  - path: /news
+    translation_key: menu.news
+  - path: /publications
+    translation_key: menu.publications
+  - path: /about
+    translation_key: menu.about
+  - path: /faq
+    translation_key: menu.faq
+    
+footer_menu:
+  - path: mailto:sdg_nsc@stat.kg
+    translation_key: menu.contact_us
+  - path: about/cookies-and-privacy
+    translation_key: menu.cookies
+
+
+# Configure the text (or "translation key") to be used on the
+# non-global metadata tab.
+non_global_metadata: indicator.national_metadata
+
+# The list of languages that are translated. The first one is the default.
+languages:
+  - ru
+  - en
+  
+metadata_tabs:
+  indicator_information:
+    title: custom.indicator_information
+    blurb: custom.indicator_information_blurb
+  national:
+    title: indicator.national_metadata
+    blurb: indicator.national_metadata_blurb
+  data_reporter:
+    title: custom.data_reporter
+    blurb: custom.data_reporter_blurb
+
+
+# This makes sure that all pages have a language.
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      language: "ru"
+
+# Set a base for all goal image URLs. Note that the full goal image path will be
+# the base below, completed with: /[language]/[number].png (eg, /fr/6.png).
+goal_image_base: https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/assets/img/goals
+
+# Tell Jekyll to use the Remote Theme plugin.
+plugins:
+  - jekyll-remote-theme
+  - jekyll-get-json
+  - jekyll-open-sdg-plugins
+
+# Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
+remote_theme: open-sdg/open-sdg@1.4.0
+
+# Apply any custom Javascript.
+custom_js:
+  - /assets/js/custom.js
+
+# Apply any custom CSS.
+custom_css:
+  - /assets/css/custom.css
+  
+# Mapping
+map_options:
+  tileURL: https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}
+  tileOptions:
+    id: mapbox.light
+    accessToken: pk.eyJ1IjoiYnJvY2tmYW5uaW5nMSIsImEiOiJjaXplbmgzczgyMmRtMnZxbzlmbGJmdW9pIn0.LU-BYMX69uu3eGgk0Imibg
+    attribution: <a href="https://www.mapbox.com">Mapbox</a> | <a href="http://geoportal.statistics.gov.uk/">ONS</a>
+  minZoom: 6
+map_layers:
+  # Country
+  - min_zoom: 6
+    max_zoom: 10
+    serviceUrl: https://opendata.arcgis.com/datasets/493025a10e2f41eda90f57a5a38d5af8_1.geojson
+    nameProperty: ADM0_NAME
+    idProperty: ADM0_CODE
+    staticBorders: true

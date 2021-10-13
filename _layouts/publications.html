@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div id="main-content" class="container newslist">
+  <div class="row">
+    <div class="col-md-9 push-md-3">
+      {{content}}
+      {% assign posts = site.publications | where: 'language', page.language %}
+      {% for post in posts %}
+      <div class="row">
+        <div class="col-md-2">
+          <a class="thumbnail" href="{{ site.baseurl }}{{ post.url }}">
+            <img style="width: 100%" alt="{{ post.title }}" src="{{ site.baseurl }}{{ post.img }}"/>
+          </a>
+        </div>
+        <div class="col-md-9">
+          <article>
+            <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
+            <p>
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | t_date: 'standard' }}</time>
+            </p>
+            <div class="post-excerpt">
+              {{ post.excerpt | markdownify }}
+            </div>
+          </article>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
