@@ -7,7 +7,7 @@ excerpt: National Statistical Committee held a two-day training to increase the 
 language: en
 permalink: /test-post-1/
 categories:
-  - custom.category
+  - custom.national
 ---
 
 ## National Statistical Committee will teach journalists the correct use of statistical data
