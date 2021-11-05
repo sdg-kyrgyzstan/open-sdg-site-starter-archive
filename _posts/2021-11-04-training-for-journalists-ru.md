@@ -3,7 +3,7 @@ layout: post
 title: Нацстатком научит журналистов правильному использованию статистических данных
 author: Национальный статистический комитет Кыргызской Республики
 excerpt: Нацстатком провел двухдневный обучающий тренинг по повышению потенциала журналистов в использовании данных официальной статистики. 
-  <img src="https://github.com/sdg-kyrgyzstan/open-sdg-site-starter/blob/develop/news-images/internation-con-1.jpg" alt="Photo of all participants at international conference" height="300px" align="center">
+  <img src="https://github.com/sdg-kyrgyzstan/open-sdg-site-starter-archive/blob/develop/news-images/training-for-journalists1.jpg" alt="Photo of all participants at training" height="300px" align="center">
 language: ru
 permalink: /test-post-1/
 categories:
