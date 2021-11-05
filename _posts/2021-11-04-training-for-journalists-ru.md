@@ -14,7 +14,7 @@ categories:
 
 ***
 
-<img src="{{ site.baseurl }}/news-images/internation-con-1.jpg" alt="Photo of all participants at international conference" align="center">
+<img src="{{ site.baseurl }}/news-images/training-for-journalists1.jpg" alt="Photo of all participants at training" align="center">
 
 ***
 
@@ -22,6 +22,6 @@ categories:
 Представители Нацстаткома проведут работы в группах и ответят на многочисленные вопросы журналистов.
 Целью семинара является улучшение взаимодействия между статистикой и представителями СМИ, повышение их статистической грамотности, а также обсуждение потребностей в данных.
 
-<img src="{{ site.baseurl }}/news-images/internation-con-2.jpg" alt="Photo of three participants at international conference" align="left">
+<img src="{{ site.baseurl }}/news-images/training-for-journalists2.jpg" alt="Photo of presenter at training" align="left">
 
-<img src="{{ site.baseurl }}/news-images/internation-con-3.jpg" alt="Photo of three participants at international conference" align="left">
+<img src="{{ site.baseurl }}/news-images/training-for-journalists3.jpg" alt="Photo of presenter at training" align="left">
