@@ -7,7 +7,7 @@ excerpt: Нацстатком провел двухдневный обучающ
 language: ru
 permalink: /test-post-1/
 categories:
-  - custom.category
+  - custom.national
 ---
 
 ## Нацстатком научит журналистов правильному использованию статистических данных
